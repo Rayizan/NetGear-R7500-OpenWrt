@@ -15,3 +15,4 @@
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+git clone https://github.com/vernesong/OpenClash/releases/download/v0.40.15-beta/luci-app-openclash_0.40.15-beta_all.ipk
