@@ -17,4 +17,4 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 # sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 # git clone https://github.com/vernesong/OpenClash.git
 sed -i '$a src-git openclash https://github.com/vernesong/OpenClash.git' feeds.conf.default
-sed -i '$a src-git libcap https://downloads.openwrt.org/snapshots/packages/arm_cortex-a15_neon-vfpv4/packages' feeds.conf.default
+sed -i '$a src-git libcap https://downloads.openwrt.org/snapshots/packages/arm_cortex-a15_neon-vfpv4/packages/' feeds.conf.default
