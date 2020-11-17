@@ -61,9 +61,6 @@ jobs:
       run: |
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH openwrt
-        git fetch --tags
-        git tag -l
-        git checkout v19.07.4
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
     - name: Load custom feeds
@@ -78,6 +75,9 @@ jobs:
 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
+        git fetch --tags
+        git tag -l
+        git checkout v19.07.4
 
     - name: Load custom configuration
       run: |
