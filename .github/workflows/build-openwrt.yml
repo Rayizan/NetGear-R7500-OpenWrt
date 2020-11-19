@@ -75,6 +75,9 @@ jobs:
 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
+        git fetch --tags
+        git tag -l
+        git checkout v19.07.4
 
     - name: Load custom configuration
       run: |
