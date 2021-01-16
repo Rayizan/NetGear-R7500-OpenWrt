@@ -11,5 +11,6 @@
 #
 rm target/linux/ipq806x/files-4.14/arch/arm/boot/dts/qcom-ipq8064-r7500.dts
 cp files/qcom-ipq8064-r7500.dts target/linux/ipq806x/files-4.14/arch/arm/boot/dts
+rm -rf files
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
